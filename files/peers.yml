@@ -1,0 +1,8 @@
+# This file modifies what Type your peers will have in the table on the status page.
+# First part of the line must be the same as your peer's name in pathvector, otherwise it wont work.
+# Second part can be anything you want.
+
+
+Example1: Upstream
+Example2: Peer
+Example3: AnyOtherText
