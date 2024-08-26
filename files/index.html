@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+        h1 { text-align: center; color: #444; }
+        .tab-container { display: flex; margin-bottom: 20px; }
+        .tab-button { padding: 10px 20px; margin-right: 5px; border: 1px solid #ddd; border-radius: 4px; background-color: #f2f2f2; cursor: pointer; }
+        .tab-button.active { background-color: #4CAF50; color: white; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; }
+        th { background-color: #f2f2f2; }
+        .status-established { background-color: #a8e3ba; }
+        .status-other { background-color: #eb9b9b; }
+        .status-none { background-color: #f5f5f5; }
+        tr:hover { background-color: #f1f1f1; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BGP Overview</h1>
+
+        <div class="tab-container">
+            <div class="tab-button active" id="router1Tab">Router 1</div>
+            <div class="tab-button" id="router2Tab">Router 2</div>
+        </div>
+
+        <h2>Router Data</h2>
+        <div id="router1Data">
+            <table id="statusTable1">
+                <thead>
+                    <tr>
+                        <th>Peer</th>
+                        <th>Type</th>
+                        <th>AS</th>
+                        <th>Neighbor</th>
+                        <th>State</th>
+                        <th>IN</th>
+                        <th>OUT</th>
+                        <th>Since</th>
+                        <th>Info</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be inserted here by script.js -->
+                </tbody>
+            </table>
+        </div>
+
+# Single router uncomment here
+        <div id="router2Data" style="display: none;">
+            <table id="statusTable2">
+                <thead>
+                    <tr>
+                        <th>Peer</th>
+                        <th>Type</th>
+                        <th>AS</th>
+                        <th>Neighbor</th>
+                        <th>State</th>
+                        <th>IN</th>
+                        <th>OUT</th>
+                        <th>Since</th>
+                        <th>Info</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be inserted here by script.js -->
+                </tbody>
+            </table>
+        </div>
+# Single router uncomment here
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
